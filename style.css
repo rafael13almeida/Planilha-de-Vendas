@@ -1,14 +1,23 @@
 body {
     margin: auto;
     width: 60%;
+    background-color: #F8F8FF;
 }
 
 header {
     display: flex;
+    padding: 40px;
+    font-size: 30px;
+    font-family: sans-serif;
     justify-content: center;
     background-color: aquamarine;
     color: black;
     text-align: center;
+}
+
+header h1 {
+    color: red;
+    font-size: 90px;
 }
 
 header ul li {
@@ -41,4 +50,8 @@ table, th, td {
     border-collapse: collapse;
     border-radius: 5px;
     font-size: medium;
+    margin: 20px;
+    padding: 10px;
 }
+
+
