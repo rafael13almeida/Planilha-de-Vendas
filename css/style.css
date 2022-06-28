@@ -1,6 +1,6 @@
 body {
     margin: auto;
-    width: 60%;
+    width: 50%;
     background-color: #F8F8FF;
 }
 
@@ -8,16 +8,17 @@ header {
     display: flex;
     padding: 40px;
     font-size: 30px;
-    font-family: sans-serif;
     justify-content: center;
-    background-color: aquamarine;
+    background-color: #27c062;
     color: black;
     text-align: center;
+    border-radius: 5px;
 }
 
 header h1 {
-    color: red;
+    color: #eb2308;
     font-size: 90px;
+    font-family:'Beau Rivage'
 }
 
 header ul li {
@@ -52,6 +53,34 @@ table, th, td {
     font-size: medium;
     margin: 20px;
     padding: 10px;
+}
+
+#vendas {
+    background-color: #27c062;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* MEDIA */
+
+@media (min-width:399px) {
+    body {
+        margin: auto;
+        width: 95%;
+    }
+    
+    header {
+        background-color: #27c062;
+        justify-content:center;
+    }
+    
+    header h1 {
+        font-size: 60px;
+    }
+
+    header h2 {
+        font-size: 26px;
+    }
 }
 
 

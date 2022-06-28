@@ -1,58 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizzas</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.google.com/share?selection.family=Beau%20Rivage" rel="stylesheet">
 
 </head>
+
 <body>
     <header>
         <ul>
-            <li><h1>Vegetaripizza</h1></li>
-            <li><h2>Vendas de Pizzas</h2></li>
+            <li>
+                <h1>Vegetaripizza</h1>
+            </li>
+            <li>
+                <h2>Vendas de Pizzas</h2>
+            </li>
         </ul>
     </header>
     <section>
         <form>
             <h3>Escolha sua pizza favorita</h3>
             <ul>
-                <li><input type="radio" id="abobrinha" name="pizzas"><label for="abobrinha">Abobrinha</label></li>            
-                <li><input type="radio" id="queijo" name="pizzas"><label for="queijo">Quatro Queijos</label></li></li>
-                <li><input type="radio" id="brocolis" name="pizzas"><label for="brocolis">Brócolis</label></li></li>
+                <li><input type="radio" id="abobrinha" name="pizzas"><label for="abobrinha">Abobrinha</label></li>
+                <li><input type="radio" id="queijo" name="pizzas"><label for="queijo">Quatro Queijos</label></li>
+                </li>
+                <li><input type="radio" id="brocolis" name="pizzas"><label for="brocolis">Brócolis</label></li>
+                </li>
             </ul>
         </form>
     </section>
 
     <section>
-        <button class="button is-success" id="vendas">Vendas</button><button class="button is-success is-outlined" id="estorno">Estorno</button>
+        <button class="button is-success" id="vendas">Vendas</button><button class="button is-danger is-outlined"
+            id="estorno">Estorno</button>
 
     </section>
 
     <section id="table">
         <table>
             <tr>
-                <th>Sabores</th><th>Quantidade</th><th>Valores</th>
+                <th>Sabores</th>
+                <th>Quantidade</th>
+                <th>Valores</th>
             </tr>
             <tr>
-                <td>Abobrinha</td><td id="resultadoAbobrinha"></td><td id="vendaAbobrinha"></td>
+                <td>Abobrinha</td>
+                <td id="resultadoAbobrinha"></td>
+                <td id="vendaAbobrinha"></td>
             </tr>
             <tr>
-                <td>Quatro Queijos</td><td id="resultadoQueijo"></td><td id="vendaQueijo"></td>
+                <td>Quatro Queijos</td>
+                <td id="resultadoQueijo"></td>
+                <td id="vendaQueijo"></td>
             </tr>
             <tr>
-                <td>Brócolis</td><td id="resultadoBrocolis"></td><td id="vendaBrocolis"></td>
+                <td>Brócolis</td>
+                <td id="resultadoBrocolis"></td>
+                <td id="vendaBrocolis"></td>
             </tr>
         </table>
     </section>
 
     <section>
-        <button class="button is-large is-fullwidth is-danger" id="export">Imprimir Planilha</button>
+        <button class="button is-large is-fullwidth is-danger" id="export">Baixar Planilha</button>
     </section>
     <script src="tableToExcel.js"></script>
     <script src="index.js"></script>
 </body>
+
 </html>

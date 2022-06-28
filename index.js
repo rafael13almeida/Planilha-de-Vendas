@@ -20,7 +20,7 @@ btnEstorno.addEventListener('click', estorno, false);
 btnPlanilha.addEventListener('click', planilha, false);
 
 
-function venda(e) {
+function venda(event) {
 
     switch (btnVendas == document.getElementById('vendas')) {
         case document.getElementById('abobrinha').checked:
@@ -49,7 +49,7 @@ function venda(e) {
     }
 }
 
-function estorno(e) {
+function estorno(event) {
     switch (btnEstorno == document.getElementById('estorno')) {
 
         case document.getElementById('abobrinha').checked:
@@ -86,6 +86,6 @@ function estorno(e) {
     }
 }
 
-function planilha(e) {
+function planilha(event) {
     TableToExcel.convert(document.getElementById('table'));
 }
